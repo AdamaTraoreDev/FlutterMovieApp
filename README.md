@@ -1,16 +1,37 @@
-# flutterblocmovieapp
+# Devizo AI - Artisan Management Tool
 
-A new Flutter application.
+Devizo AI is a French artisan business management tool built with Flutter for desktop (Windows/Linux/macOS) and web.
+
+## Features
+- **Dashboard**: Stats (revenue, quotes, tasks, clients), health monitor, alerts.
+- **Sidebar**: Navigation to Dashboard, Assistant, Tasks, Documents, Clients.
+- **Tasks**: Table view with priority, status, client, document links, due dates.
+- **Documents**: Quote/Invoice management with preview/edit/send modals.
+- **Clients**: Client list with details.
+- **Assistant**: AI business assistant.
+- **Public Quote**: Public page for clients to view & accept quotes.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- Flutter SDK (latest stable)
+- Dart SDK
 
-A few src.resources to get you started if this is your first Flutter project:
+### Running the App
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```bash
+flutter pub get
+flutter run -d windows # For Windows
+flutter run -d linux   # For Linux
+flutter run -d macos   # For macOS
+flutter run -d chrome  # For Web
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Structure
+- `lib/config`: Theme and routing configuration.
+- `lib/data`: Mock data services and models.
+- `lib/features`: Feature-based modules (dashboard, tasks, etc.).
+- `lib/shared`: Shared widgets and utilities.
+
+## Mock Data
+The app uses hardcoded mock data for demonstration purposes (`lib/data/services/mock_service.dart`).
